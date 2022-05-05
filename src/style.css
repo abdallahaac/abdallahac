@@ -542,18 +542,18 @@ html {
 	position: sticky;
 	top: 1px;
 	text-decoration: none;
-	padding: 30px 90px;
+	padding: 40px 90px;
 }
 
-.nav-item.link.name {
+.nav-item.name {
 	font-weight: 700;
 }
 
-.nav-item.link:hover {
+.nav-item.name:hover {
 	transition: border-color 0.9s ease;
 }
 
-.nav-item.link::after {
+.nav-item.name::after {
 	content: "";
 	display: block;
 	width: 0;
@@ -562,7 +562,7 @@ html {
 	transition: width 0.4s;
 }
 
-.nav-item.link:hover::after {
+.nav-item.name:hover::after {
 	width: 100%;
 	transition: width 0.4s;
 }
@@ -607,8 +607,19 @@ html {
 		animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 	}
 }
-.nav-item.checkbox {
-	margin-left: 30px;
+.nav-elements.projects > li {
+	padding: 0px 15px;
+}
+.nav-item.link {
+	padding: 7px 16px;
+	border-radius: 6px;
+	transition: all 250ms;
+}
+.nav-item.link:hover {
+	background-color: rgba(255, 255, 255, 0.072);
+}
+.nav-item.github {
+	margin-right: 15px;
 }
 nav ul,
 li {
