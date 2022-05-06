@@ -531,20 +531,22 @@ html {
 }
 
 .nav-container {
-	font-size: 15px;
+	font-size: 16px;
 	color: #fff;
 	display: flex;
 	flex-direction: row;
 	height: var(--height);
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 1px;
 	text-decoration: none;
 	padding: 40px 90px;
 }
-
+.nav-item {
+	font-size: 18px;
+}
 .nav-item.name {
 	font-weight: 700;
 }
@@ -559,12 +561,12 @@ html {
 	width: 0;
 	height: 1px;
 	background-color: white;
-	transition: width 0.4s;
+	transition: width 0.9s;
 }
 
 .nav-item.name:hover::after {
 	width: 100%;
-	transition: width 0.4s;
+	transition: width 0.9s;
 }
 .nav-item.contact {
 	animation: bounce 1s infinite;
@@ -607,8 +609,65 @@ html {
 		animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 	}
 }
+
 .nav-elements.projects > li {
 	padding: 0px 15px;
+}
+.drop-down-list {
+	display: flex;
+
+	position: absolute;
+	align-items: center;
+	left: 46%;
+	top: 90%;
+	padding: 9px px;
+	background-color: rgba(255, 255, 255, 0.072);
+	border-radius: 6px;
+}
+
+.drop-down-list li :hover {
+	transition: border-color 2s ease;
+}
+
+.drop-down-list li ::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 1px;
+	background-color: white;
+	transition: width 0.9s;
+}
+
+.drop-down-list li :hover::after {
+	width: 100%;
+	transition: width 0.9s;
+}
+
+.drop-down-list ul {
+	display: block;
+	text-align: center;
+}
+.drop-down-list:not(:hover) {
+	visibility: hidden;
+	transition: visibility 100ms;
+}
+.middle-content ul:hover .drop-down-list {
+	visibility: visible;
+	transform: translateY(0%);
+	transition-delay: 0s, 2s, 2s;
+}
+.drop-down-list:hover {
+	visibility: visible;
+}
+
+.drop-down-list li {
+	padding: 20px;
+	align-items: center;
+	text-align: center;
+}
+#portfolio {
+	margin: 0px auto;
+	margin-left: 30%;
 }
 .nav-item.link {
 	padding: 7px 16px;
@@ -635,13 +694,9 @@ li {
 .nav-elements > li > a {
 	text-decoration: none;
 	color: #fff;
-
-	margin: 0px 10px;
 }
 .nav-elements.personal > li > a {
 	align-items: center;
-
-	margin: 0px 30px;
 }
 
 ul > a {
