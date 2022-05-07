@@ -142,7 +142,7 @@ exports.progressBar = progressBar;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.navbar = exports.html = void 0;
+exports.navbar = void 0;
 var html = '<header class="nav-container">\
 			<nav>\
 				<a href="../index.html" class="nav-item name">Abdallah Abou-Chahine</a>\
@@ -156,9 +156,9 @@ var html = '<header class="nav-container">\
 					</li>\
 					<div class="drop-down-list" id="drop-down">\
 						<ul>\
-							<li><a href="">Graphic Design</a></li>\
-							<li><a href="">Art & Photography</a></li>\
-							<li><a href="">Technical Projects</a></li>\
+							<li><a href="/graphic-design.html">Graphic Design</a></li>\
+							<li><a href="/art-&-photography.html">Art & Photography</a></li>\
+							<li><a href="/technical-projects.html">Technical Projects</a></li>\
 						</ul>\
 					</div>\
 				</ul>\
@@ -166,11 +166,12 @@ var html = '<header class="nav-container">\
 \
 			<nav>\
 				<ul class="nav-elements personal">\
-					<li><a class="nav-item link" href="Pages/About.html">About</a></li>\
+					<li><a class="nav-item link" href="/About.html">About</a></li>\
 					<li class="nav-item github">\
 						<a\
 							href="https://github.com/abdallahaac"\
 							class="nav-item link github"\
+							target="_blank"\
 							>Github</a\
 						>\
 					</li>\
@@ -181,7 +182,6 @@ var html = '<header class="nav-container">\
 				</ul>\
 			</nav>\
 		</header>';
-exports.html = html;
 var navbar = document.getElementById("nav").innerHTML = html;
 exports.navbar = navbar;
 },{}],"src/main.js":[function(require,module,exports) {
@@ -218,7 +218,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57329" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55418" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

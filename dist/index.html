@@ -5,17 +5,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" type="image/x-icon" href="/ac-logo.3973ad13.png">
-		<link rel="stylesheet" href="/style.cd660723.css">
+		<link rel="stylesheet" href="/style.d7ce259d.css">
 		<script type="module" src="/main.1e43358e.js"></script>
 
 		<title>Abdallah Abou-Chahine</title>
-	<script src="/style.cd660723.js"></script></head>
+	<script src="/style.d7ce259d.js"></script></head>
 	<body>
-		<div id="progress-bar"></div>
 		<!-- start of navigation bar -->
 		<header class="nav-container">
 			<nav>
-				<a href="/index.html" class="nav-item name">Abdallah Abou-Chahine</a>
+				<a href="" class="nav-item name">Abdallah Abou-Chahine</a>
 			</nav>
 			<nav class="middle-content">
 				<ul class="nav-elements projects">
@@ -24,9 +23,9 @@
 					</li>
 					<div class="drop-down-list" id="drop-down">
 						<ul>
-							<li><a href="">Graphic Design</a></li>
-							<li><a href="">Art & Photography</a></li>
-							<li><a href="">Technical Projects</a></li>
+							<li><a href="/graphic-design.html">Graphic Design</a></li>
+							<li><a href="/art-&-photography.html">Art & Photography</a></li>
+							<li><a href="/technical-projects.html">Technical Projects</a></li>
 						</ul>
 					</div>
 				</ul>
@@ -34,9 +33,11 @@
 
 			<nav>
 				<ul class="nav-elements personal">
-					<li><a class="nav-item link" href="/Pages/About.html">About</a></li>
+					<li>
+						<a class="nav-item link" href="/About.html">About</a>
+					</li>
 					<li class="nav-item github">
-						<a href="https://github.com/abdallahaac" class="nav-item link github">Github</a>
+						<a href="https://github.com/abdallahaac" target="_blank" class="nav-item link github">Github</a>
 					</li>
 
 					<a href="" id="contact-button" class="nav-item contact">Contact me
@@ -45,7 +46,12 @@
 			</nav>
 		</header>
 		<!-- end of navigation bar -->
-		<main></main>
+		<main data-router-wrapper="">
+			<section data-router-view="home">
+				<h1>main content</h1>
+			</section>
+		</main>
 		<footer></footer>
+		<div id="progress-bar"></div>
 	</body>
 </html>
