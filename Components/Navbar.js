@@ -12,9 +12,9 @@ var html =
 					</li>\
 					<div class="drop-down-list" id="drop-down">\
 						<ul>\
-							<li><a href="">Graphic Design</a></li>\
-							<li><a href="">Art & Photography</a></li>\
-							<li><a href="">Technical Projects</a></li>\
+							<li><a href="/graphic-design.html">Graphic Design</a></li>\
+							<li><a href="/art-&-photography.html">Art & Photography</a></li>\
+							<li><a href="/technical-projects.html">Technical Projects</a></li>\
 						</ul>\
 					</div>\
 				</ul>\
@@ -22,7 +22,7 @@ var html =
 \
 			<nav>\
 				<ul class="nav-elements personal">\
-					<li><a class="nav-item link" href="#">About</a></li>\
+					<li><a class="nav-item link" href="/About.html">About</a></li>\
 					<li class="nav-item github">\
 						<a\
 							href="https://github.com/abdallahaac"\
