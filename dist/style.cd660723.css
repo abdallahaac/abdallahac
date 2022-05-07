@@ -518,7 +518,7 @@ html {
 	box-sizing: border-box;
 	background-color: #181818;
 	height: 500vh;
-	font: 14px "Century Gothic", Futura, sans-serif;
+	font-family: "Century Gothic", Futura, sans-serif;
 }
 
 #progress-bar {
@@ -528,6 +528,11 @@ html {
 	position: fixed;
 	bottom: 0;
 	height: 1px;
+}
+/* beginning of navbar styling */
+#nav {
+	position: sticky;
+	top: 1px;
 }
 
 .nav-container {
@@ -702,3 +707,15 @@ li {
 ul > a {
 	text-decoration: none;
 }
+/* end of navbar styling */
+
+/* beginning of about main content */
+h1 {
+	font-size: 300px;
+	font-weight: 900;
+	text-align: center;
+	color: white;
+}
+
+
+/*# sourceMappingURL=/style.cd660723.css.map */
