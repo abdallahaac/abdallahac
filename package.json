@@ -1,0 +1,28 @@
+{
+	"name": "abdallahac",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"deploy": "vercel --prod"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/abdallahaac/abdallahac.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/abdallahaac/abdallahac/issues"
+	},
+	"homepage": "https://github.com/abdallahaac/abdallahac#readme",
+	"devDependencies": {
+		"parcel": "^2.5.0",
+		"sass": "^1.51.0"
+	},
+	"dependencies": {
+		"@dogstudio/highway": "^2.2.1",
+		"gsap": "^3.10.4"
+	}
+}
