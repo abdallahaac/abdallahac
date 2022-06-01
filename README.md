@@ -16,5 +16,5 @@ npm i vercel
 
 
 # Build for production in the dist/ directory
-npm run build
+vercel
 ```
