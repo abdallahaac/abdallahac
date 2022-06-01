@@ -1,6 +1,6 @@
 // File: fade.js
 // Import Highway
-import Highway from "../node_modules/@dogstudio/highway";
+import Highway from "@dogstudio/highway";
 
 // GSAP Library
 import Tween from "gsap";

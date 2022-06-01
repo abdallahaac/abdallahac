@@ -4,16 +4,172 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/assets/style.scss" />
+		<link rel="stylesheet" href="/assets/style.css" />
 		<script type="module" src="src/main.js"></script>
 
-		<title>Technical Projects by AAC</title>
+		<title>Technical Projects</title>
 	</head>
 	<body>
-		<div id="nav"></div>
-		<main>
-			<section>
-				<h1><a href="#">techincal projects</a></h1>
+		<!-- start of navigation bar -->
+		<header class="nav-container">
+			<nav>
+				<a href="main" id="name" class="nav-item name">Abdallah Abou-Chahine</a>
+			</nav>
+			<nav class="middle-content">
+				<ul class="nav-elements projects">
+					<li id="portfolio">
+						<a href="/main" id="portfolio" class="nav-item link portfolio"
+							>Portfolio</a
+						>
+					</li>
+					<div class="drop-down-list" id="drop-down">
+						<ul>
+							<li><a href="/graphic-design">Graphic Design</a></li>
+							<li><a href="/art-&-photography">Art & Photography</a></li>
+							<li><a href="/technical-projects">Technical Projects</a></li>
+						</ul>
+					</div>
+				</ul>
+			</nav>
+
+			<nav>
+				<ul class="nav-elements personal">
+					<li>
+						<a class="nav-item link" href="/About">About</a>
+					</li>
+					<li class="nav-item github">
+						<a
+							href="https://github.com/abdallahaac"
+							target="_blank"
+							class="nav-item link github"
+							>Github</a
+						>
+					</li>
+
+					<a href="" id="contact-button" class="nav-item contact"
+						>Contact me
+					</a>
+					<!-- beginning of burger icon  -->
+					<div id="burger-container" class="burger-container">
+						<img
+							id="burgerslice"
+							class="burger slice"
+							src="./assets/Images/menu-icon-0.svg"
+							alt=""
+						/>
+						<img
+							class="burger slice"
+							src="./assets/Images/menu-icon-0.svg"
+							alt=""
+						/>
+						<img
+							class="burger slice"
+							src="./assets/Images/menu-icon-0.svg"
+							alt=""
+						/>
+					</div>
+					<!-- beginning of burger icon  -->
+				</ul>
+			</nav>
+		</header>
+		<!-- end of navigation bar -->
+		<!-- Beginning of expanded burger section  -->
+		<div id="expandedBurger" class="burger-navigation">
+			<ul>
+				<li><a href="/graphic-design.html">Graphic Design</a></li>
+				<li><a href="/art-&-photography.html">Art & Photography</a></li>
+				<li><a href="/technical-projects.html">Technical Projects</a></li>
+			</ul>
+		</div>
+		<!-- end of expanded burger section  -->
+		<main data-router-wrapper>
+			<section data-router-view="technical" class="tech container" id="parent">
+				<div class="technical-project one">
+					<div class="project-details one">
+						<header class="project-detail-header">
+							<h2>
+								<a href="https://andyruew.itch.io/cold-cats" target="_blank"
+									>Cold Cats 🔗</a
+								>
+							</h2>
+						</header>
+						<div class="description">
+							<p>
+								<b>Cold Cats</b> is a single player, platform, survival game.
+								You play as a cold kitty named Fuligin . Who got separated from
+								his loving owner. Your objective is to make sure Fuligin gets
+								food to keep his hunger bar full, while also going near objects
+								that emit warmth to fill your warmth bar.
+							</p>
+						</div>
+					</div>
+
+					<div class="project-demo-container">
+						<div class="project-demo">
+							<div class="icon-container">
+								<div class="icon red"></div>
+								<div class="icon yellow"></div>
+								<div id="fullscreen" class="icon green"></div>
+							</div>
+							<div class="project-demo-header"></div>
+							<div class="image-container">
+								<iframe
+									class="video"
+									width="100%"
+									height="100%"
+									src="https://www.youtube.com/embed/5tfuhcVQGUk?controls=0"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
+							</div>
+						</div>
+						<div class="project-detail-text">
+							<h3>Created using Unity Game Engine</h3>
+						</div>
+					</div>
+				</div>
+				<div class="technical-project two">
+					<div class="project-demo-container">
+						<div class="project-demo">
+							<div class="icon-container">
+								<div class="icon red"></div>
+								<div class="icon yellow"></div>
+								<div id="fullscreen1" class="icon green"></div>
+							</div>
+							<div class="project-demo-header"></div>
+							<div class="image-container">
+								<img src="" alt="" />
+							</div>
+						</div>
+						<div class="project-detail-text">
+							<h3>Created using Three.js</h3>
+						</div>
+					</div>
+					<div class="project-details two">
+						<header class="project-detail-header">
+							<h2>
+								<a
+									href="https://3d-geometric-landing-page.vercel.app/"
+									target="_blank"
+									>Terre 🔗</a
+								>
+							</h2>
+						</header>
+						<div class="description">
+							<p>
+								My initial goal for this project was to incorporate the 3D game
+								development & web development I learned throughout the semesters
+								into a front end web page. I discovered the Three.js library and
+								created this project. I became familiar with the fundamentals of
+								the library in the course of making the project. Namely,
+								utilizing a variety of geometries, material texturing, lighting
+								and cameras.
+							</p>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 		<div id="progress-bar"></div>

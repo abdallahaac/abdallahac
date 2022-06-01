@@ -9,7 +9,7 @@
 			type="image/x-icon"
 			href="/assets/Images/ac-logo.png"
 		/>
-		<link rel="stylesheet" href="assets/style.scss" />
+		<link rel="stylesheet" href="assets/style.css" />
 		<script type="module" src="src/main.js"></script>
 
 		<title>Abdallah Abou-Chahine</title>
@@ -18,20 +18,20 @@
 		<!-- start of navigation bar -->
 		<header class="nav-container">
 			<nav>
-				<a href="index.html" class="nav-item name">Abdallah Abou-Chahine</a>
+				<a href="main" class="nav-item name">Abdallah Abou-Chahine</a>
 			</nav>
 			<nav class="middle-content">
 				<ul class="nav-elements projects">
 					<li id="portfolio">
-						<a href="index.html" id="portfolio" class="nav-item link portfolio"
+						<a href="/main" id="portfolio" class="nav-item link portfolio"
 							>Portfolio</a
 						>
 					</li>
 					<div class="drop-down-list" id="drop-down">
 						<ul>
-							<li><a href="/graphic-design.html">Graphic Design</a></li>
-							<li><a href="/art-&-photography.html">Art & Photography</a></li>
-							<li><a href="/technical-projects.html">Technical Projects</a></li>
+							<li><a href="/graphic-design">Graphic Design</a></li>
+							<li><a href="/art-&-photography">Art & Photography</a></li>
+							<li><a href="/technical-projects">Technical Projects</a></li>
 						</ul>
 					</div>
 				</ul>
@@ -40,7 +40,7 @@
 			<nav>
 				<ul class="nav-elements personal">
 					<li>
-						<a class="nav-item link" href="/About.html">About</a>
+						<a class="nav-item link" href="/About">About</a>
 					</li>
 					<li class="nav-item github">
 						<a
@@ -54,13 +54,41 @@
 					<a href="" id="contact-button" class="nav-item contact"
 						>Contact me
 					</a>
+					<div href="" id="burger" class="burger">
+						<img
+							id="burgerslice"
+							class="burger slice"
+							src="./assets/Images/menu-icon-0.svg"
+							alt=""
+						/>
+						<img
+							class="burger slice"
+							src="./assets/Images/menu-icon-0.svg"
+							alt=""
+						/>
+						<img
+							class="burger slice"
+							src="./assets/Images/menu-icon-0.svg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<ul></ul>
+					</div>
 				</ul>
 			</nav>
 		</header>
+		<div id="burger-navigation">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
 		<!-- end of navigation bar -->
-		<main data-router-wrapper>
+		<main class="home" data-router-wrapper>
 			<section data-router-view="home">
-				<h1>main content</h1>
+				<h1 class="page-title">Home</h1>
 			</section>
 		</main>
 		<footer></footer>
