@@ -501,6 +501,7 @@ html {
 	height: 400vh;
 	width: 100vw;
 	font-family: "Century Gothic", Futura, sans-serif;
+	overflow: none;
 }
 
 #progress-bar {
@@ -667,7 +668,7 @@ html {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	left: 46%;
+	left: 45%;
 	top: 90%;
 	padding: 9px px;
 	background-color: #282828;
@@ -733,7 +734,7 @@ html {
 
 #portfolio {
 	margin: 0px auto;
-	margin-left: 30%;
+	margin-left: 8%;
 }
 
 .nav-item.link {
@@ -782,26 +783,29 @@ ul > a {
 	text-decoration: none;
 }
 
-.burger.slice {
-	border-radius: 6px;
-	margin-bottom: 5px;
-	background-color: white;
-}
-
 @media only screen and (max-width: 987px) {
 	.nav-item.name {
 		display: block;
-		font-size: 15px;
+		font-size: 18px;
 		position: absolute;
-		padding: 10px;
-		top: 20px;
-		left: 0;
+		padding: 25px 15px;
+		top: 10px;
+		left: 20px;
 	}
-	.burger-container {
+	.burger-container,
+	.closed-burger-icon {
 		position: absolute;
-		top: 20px;
+		top: 35px;
 		right: 20px;
+		transition: all 300ms;
 	}
+	.burger.slice {
+		border-radius: 1px;
+		margin-bottom: 5px;
+		height: 5px;
+		background-color: white;
+	}
+
 	.burger {
 		display: flex;
 		justify-content: center;
@@ -825,10 +829,14 @@ ul > a {
 		font-weight: 500;
 	}
 	.burger-navigation {
+		position: sticky;
+		top: 80px;
 		background-color: white;
 		width: 100%;
 		visibility: var(--visibility);
+		z-index: 100;
 	}
+
 	.burger-navigation > ul > li:hover {
 		background-color: rgba(226, 226, 226, 0.3);
 	}
@@ -846,6 +854,23 @@ ul > a {
 	.page-title {
 		display: none;
 	}
+	.profile-pic-container {
+		position: absolute;
+		margin-left: 50px;
+		top: 200px;
+	}
+
+	.graphic-container {
+		flex-direction: column;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		top: 200px;
+		position: absolute;
+	}
+	.graphic-posts {
+	}
 }
 @media (min-width: 987px) {
 	.burger-navigation {
@@ -854,7 +879,33 @@ ul > a {
 }
 
 /* end of navbar styling */
-/* beginning of about main content */
+/* beginning of  main page content */
+.main-page-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.profile-pic-container {
+	display: flex;
+	margin-top: 20px;
+	background-color: rgba(255, 255, 255, 0.014);
+	box-shadow: 0 0 10px rgba(235, 235, 235, 0.3);
+	border-radius: 50%;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.profile-pic-container:nth-child(3),
+.profile-pic-container:nth-child(1) {
+	z-index: 0;
+	opacity: 0.2;
+}
+img:nth-child(1) {
+	margin-bottom: 20px;
+}
+
+/* end of  main page content */
+
 h1 {
 	text-transform: uppercase;
 	font-size: 260px;
@@ -943,12 +994,12 @@ h2 {
 	justify-content: space-evenly;
 }
 
-h2:hover {
+.technical-header:hover {
 	-webkit-transition: border-color 0.9s ease;
 	transition: border-color 0.9s ease;
 }
 
-h2::after {
+.technical-header::after {
 	content: "";
 	display: block;
 	width: 0;
@@ -958,13 +1009,13 @@ h2::after {
 	transition: width 0.9s;
 }
 
-h2:hover::after {
+.technical-header:hover::after {
 	width: 100%;
 	-webkit-transition: width 0.9s;
 	transition: width 0.9s;
 }
 
-h2.contact {
+.tech.container > h2.contact {
 	-webkit-animation: bounce 1s infinite;
 	animation: bounce 1s infinite;
 	-webkit-animation-delay: 2s;
@@ -1062,57 +1113,34 @@ iframe {
 	font-size: 24px;
 	text-align: justify;
 }
+
 /*# sourceMappingURL=style.css.map */
 
 // beginning of graphic design page
-.grid {
-	background-color: #fff;
-	display: grid;
-	gap: 5px;
-	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-	grid-template-rows: masonry;
-}
-#graphic-main {
-	width: 100%;
-	height: 100%;
-}
-.header-graphic {
-	width: 100%;
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	z-index: 10;
-	mix-blend-mode: difference;
-}
-.masonry-grid {
-	position: relative;
-	margin-left: 100px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 10px;
-	padding: 200px 2vw;
-}
-.column {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-.post {
-	margin: 10px 0px;
-	position: relative;
-	overflow: hidden;
-	width: 500px;
-	height: 300px;
-	background-color: #fff;
-}
-#graphic-body,
-#graphic-html {
-	height: 200vh;
-	width: 100vw;
-}
+// .graphic-container {
+// 	display: flex;
+// 	margin-top: 100px;
+// 	justify-content: center;
+// 	flex-wrap: wrap;
+// 	width: 100%;
+// }
+// .graphic-post {
+// 	position: relative;
+// 	flex-wrap: wrap;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	text-align: center;
+// 	flex-wrap: wrap;
+// 	padding: 10px;
+// 	width: 100px;
+// 	height: 280px;
+// 	margin: 20px 20px 40px;
+// 	border: 1px solid white;
+// 	transition: all 300ms;
+// }
+// .graphic-post:hover {
+// 	background-color: rgba(255, 255, 255, 1);
+// }
 
 // end of graphic design page

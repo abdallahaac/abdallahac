@@ -36,11 +36,8 @@
 				</ul>
 			</nav>
 
-			<nav>
+			<nav class="navigation-right-container">
 				<ul class="nav-elements personal">
-					<li>
-						<a class="nav-item link" href="/About">About</a>
-					</li>
 					<li class="nav-item github">
 						<a
 							href="https://github.com/abdallahaac"
@@ -54,25 +51,27 @@
 						>Contact me
 					</a>
 					<!-- beginning of burger icon  -->
-					<div id="burger-container" class="burger-container">
-						<img
-							id="burgerslice"
-							class="burger slice"
-							src="./assets/Images/menu-icon-0.svg"
-							alt=""
-						/>
-						<img
-							class="burger slice"
-							src="./assets/Images/menu-icon-0.svg"
-							alt=""
-						/>
-						<img
-							class="burger slice"
-							src="./assets/Images/menu-icon-0.svg"
-							alt=""
-						/>
+					<div class="closed-burger-icon-container">
+						<div id="burger-container" class="burger-container">
+							<img
+								id="burgerslice"
+								class="burger slice"
+								src="./assets/Images/menu-icon-0.svg"
+								alt=""
+							/>
+							<img
+								class="burger slice"
+								src="./assets/Images/menu-icon-0.svg"
+								alt=""
+							/>
+							<img
+								class="burger slice"
+								src="./assets/Images/menu-icon-0.svg"
+								alt=""
+							/>
+						</div>
 					</div>
-					<!-- beginning of burger icon  -->
+					<!-- end of burger icon  -->
 				</ul>
 			</nav>
 		</header>
@@ -83,12 +82,24 @@
 				<li><a href="/graphic-design.html">Graphic Design</a></li>
 				<li><a href="/art-&-photography.html">Art & Photography</a></li>
 				<li><a href="/technical-projects.html">Technical Projects</a></li>
+				<li><a href="#">Contact Me</a></li>
 			</ul>
 		</div>
 		<!-- end of expanded burger section  -->
 		<main class="home" data-router-wrapper>
 			<section data-router-view="home">
-				<h1 id="headerone" class="page-title">Home</h1>
+				<!-- <div class="main-page-container">
+					<div class="profile-pic-container">
+						<img src="./assets/Images/artist-hat.PNG" alt="" srcset="" />
+					</div>
+					<div class="profile-pic-container">
+						<img src="./assets/Images/profile-pic.PNG" alt="" srcset="" />
+					</div>
+					<div class="profile-pic-container">
+						<img src="./assets/Images/profile-pic.PNG" alt="" srcset="" />
+					</div>
+				</div>
+				<h2>hi</h2> -->
 			</section>
 		</main>
 		<footer></footer>
