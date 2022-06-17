@@ -664,7 +664,7 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  left: 45%;
+  left: 43%;
   top: 90%;
   padding: 9px px;
   background-color: #282828;
@@ -730,7 +730,7 @@ html {
 
 #portfolio {
   margin: 0px auto;
-  margin-left: 8%;
+  margin-left: 10%;
 }
 
 .nav-item.link {
@@ -779,6 +779,10 @@ ul > a {
   text-decoration: none;
 }
 
+.closed-burger-icon {
+  display: none;
+}
+
 @media only screen and (max-width: 987px) {
   .nav-item.name {
     display: block;
@@ -788,11 +792,16 @@ ul > a {
     top: 10px;
     left: 20px;
   }
-  .burger-container,
-  .closed-burger-icon {
+  .burger-container {
     position: absolute;
     top: 35px;
     right: 20px;
+  }
+  .closed-burger-icon {
+    display: inline;
+    position: absolute;
+    top: 34px;
+    right: 25px;
     -webkit-transition: all 300ms;
     transition: all 300ms;
   }
@@ -888,6 +897,18 @@ ul > a {
 @media (min-width: 987px) {
   .burger-navigation {
     display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .drop-down-list {
+    left: 40.8%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .drop-down-list {
+    left: 42.8%;
   }
 }
 
